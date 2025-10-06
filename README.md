@@ -132,12 +132,3 @@ flutter test --coverage
 ## 📄 License
 
 MIT © Krispy145
-
----
-
-✅ This version:
-
-- Aligns with your roadmap ecosystem
-- Adds professional milestone tracking
-- Connects RAG → Secure AI API → IAM → Cybersecurity foundation
-- Ready to embed in your live CV and roadmap dashboard
