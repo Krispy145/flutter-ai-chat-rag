@@ -1,0 +1,6 @@
+app_id: "com.krispy.ai_chat_rag"
+flavors:
+  dev:
+    app_id: "com.krispy.ai_chat_rag.dev"
+  prod:
+    app_id: "com.krispy.ai_chat_rag"
