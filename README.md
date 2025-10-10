@@ -105,13 +105,13 @@ flutter test --coverage
 
 ## 🗓 Roadmap
 
-| Milestone                | Target Date | Status         |
-| ------------------------ | ----------- | -------------- |
-| Scaffold repo            | 06/10/2025  | ✅ Done        |
-| Streaming RAG UI         | 10/10/2025  | ⏳ In Progress |
-| Connect to Secure AI API | 15/10/2025  | ⏳ Planned     |
-| Integrate Flutter IAM    | 20/10/2025  | ⏳ Planned     |
-| Web Demo Deployment      | 25/10/2025  | ⏳ Planned     |
+| Milestone                | Category               | Target Date | Status         |
+| ------------------------ | ---------------------- | ----------- | -------------- |
+| Scaffold repo            | Flutter App & Packages | 06/10/2025  | ✅ Done        |
+| Streaming RAG UI         | Flutter App & Packages | 10/10/2025  | ⏳ In Progress |
+| Connect to Secure AI API | Flutter App & Packages | 15/10/2025  | ⏳ Planned     |
+| Integrate Flutter IAM    | Flutter App & Packages | 20/10/2025  | ⏳ Planned     |
+| Web Demo Deployment      | Flutter App & Packages | 25/10/2025  | ⏳ Planned     |
 
 ---
 
