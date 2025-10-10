@@ -1,13 +1,6 @@
 # AI Chat (RAG)
 
-A Flutter chat app that demonstrates **Retrieval-Augmented Generation (RAG)** with a **production-grade architecture**, built to showcase my approach to **AI integration, streaming state management, dependency injection, and CI/CD** in Flutter.
-
-This project complements my **API Showcase** app, highlighting both AI and API architecture expertise:
-
-- **AI Chat (RAG)** → real-time AI streaming, Riverpod state
-- **API Showcase** → traditional REST integration, caching, and pagination
-
-Together, they represent my **AI + Flutter** engineering skillset.
+Flutter RAG chat with streaming UI (Riverpod + GetIt), connects to Secure AI API.
 
 ---
 

@@ -29,9 +29,7 @@ class MessageListController extends AsyncNotifier<List<ChatMessage>> {
   /// Update the entire message list
   void updateMessages(List<ChatMessage> messages) {
     getIt<ChatLocalSource>().clear();
-    for (final message in messages) {
-      getIt<ChatLocalSource>().addMessage(message);
-    }
+    messages.forEach(getIt<ChatLocalSource>().addMessage);
     state = AsyncData(messages);
   }
 }
