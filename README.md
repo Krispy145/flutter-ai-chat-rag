@@ -1,4 +1,4 @@
-# AI Chat (RAG)
+# Flutter Ai Chat Rag
 
 Flutter RAG chat with streaming UI (Riverpod + GetIt), connects to Secure AI API.
 
@@ -6,34 +6,22 @@ Flutter RAG chat with streaming UI (Riverpod + GetIt), connects to Secure AI API
 
 ## 📈 Status
 
-- **Status:** scaffolded (core app complete, awaiting backend integration)
-- **Focus:** RAG chat pipeline, streaming UI, and secure API integration
-- **Last updated:** 06/10/2025
-- **Next milestone:** Connect to Secure AI API backend
+- **Status:** scaffolded (Scaffolded)
+- **Focus:** Flutter RAG chat with streaming UI (Riverpod + GetIt), connects to Secure AI API.
+- **Last updated:** 11/10/2025
+- **Target completion:** 25/10/2025
 
 ---
 
 ## 🔑 Highlights
 
-- **RAG Implementation:** Embedding + vector retrieval → LLM responses (streaming UI)
-- **State Management:** Riverpod (AsyncNotifiers for tokenized responses)
-- **Dependency Injection:** GetIt (feature-first DI graph for services and repositories)
-- **Data Models:** dart_mappable (type-safe DTOs + entities)
-- **Networking:** Dio with interceptors (auth, retries, logging)
-- **Flavors:** Dev & Prod with `--dart-define` configs
-- **CI/CD:** GitHub Actions + Shorebird OTA channels
-- **Testing:** Unit, widget, and golden tests for maintainability
-
----
-
-## 📱 About the App
-
-- **App name:** AI Chat (RAG)
-- **Package:** `com.krispy.ai_chat_rag`
-- **Platforms:** Android, iOS, Web
-- **Primary color:** `#2D70FF`
-
-Currently connected to a **mock streaming service**, easily swappable with a real RAG backend (via `ChatRemoteSource`).
+- **Cross-platform** → Android, iOS, Web support
+- **State Management** → Riverpod/GetIt for reactive updates
+- **Dependency Injection** → Clean architecture with GetIt
+- **Type Safety** → dart_mappable for data modeling
+- **Networking** → Dio with interceptors and error handling
+- **CI/CD** → GitHub Actions + Shorebird OTA updates
+- **Testing** → Unit, widget, and golden tests
 
 ---
 
@@ -41,41 +29,49 @@ Currently connected to a **mock streaming service**, easily swappable with a rea
 
 ```
 lib/
- ├─ core/           # env, DI, error, networking
+ ├─ core/           # DI, error handling, networking
  ├─ data/           # DTOs, entities, sources, repositories
- ├─ features/chat/  # chat feature (providers, pages, widgets)
+ ├─ features/       # feature modules (providers, pages, widgets)
  └─ presentation/   # app shell, router, theme
 ```
 
+**Patterns used:**
+
 - **Repository pattern** → clean separation between UI and data
-- **Riverpod** → reactive, stream-based updates
-- **GetIt** → flavor-based DI
+- **Riverpod/GetIt** → reactive state management and dependency injection
 - **dart_mappable** → type-safe data modeling
+- **Dio** → HTTP client with interceptors and error handling
+
+---
+
+## 📱 What It Demonstrates
+
+- Cross-platform mobile app development with Flutter
+- Clean architecture patterns and state management
+- API integration and data persistence
+- Modern Flutter development practices and tooling
 
 ---
 
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/Krispy145/ai_chat_rag.git
-cd ai_chat_rag
+git clone https://github.com/Krispy145/flutter-ai-chat-rag.git
+cd flutter-ai-chat-rag
 flutter pub get
 ```
 
 **Run (Dev):**
-
 ```bash
-flutter run -t lib/main_dev.dart --flavor dev   --dart-define=RAG_BASE_URL=https://api-dev.example.com   --dart-define=RAG_API_KEY=your-key
+flutter run --flavor dev
 ```
 
 **Run (Prod):**
-
 ```bash
-flutter run -t lib/main_prod.dart --flavor prod   --dart-define=RAG_BASE_URL=https://api.example.com   --dart-define=RAG_API_KEY=your-key
+flutter run --flavor prod
 ```
 
 **Codegen:**
-
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
@@ -89,36 +85,30 @@ flutter test --coverage
 ```
 
 - Unit → repositories, services
-- Widget → chat UI, message list
+- Widget → UI components and interactions
 - Golden → visual regression tests
 
 ---
 
 ## 🔒 Security & Next Steps
 
-- Integrate **Secure AI API** for backend inference
-- Implement **JWT interceptor** using `flutter_iam`
-- Add **conversation encryption** (AES) for local storage
-- Rate limiting & token validation testing
+- Follow security best practices for the technology stack
+- Implement proper authentication and authorization
+- Add comprehensive error handling and validation
+- Set up monitoring and logging
 
 ---
 
 ## 🗓 Roadmap
 
-| Milestone                | Category               | Target Date | Status         |
-| ------------------------ | ---------------------- | ----------- | -------------- |
-| Scaffold repo            | Flutter App & Packages | 06/10/2025  | ✅ Done        |
-| Streaming RAG UI         | Flutter App & Packages | 10/10/2025  | ⏳ In Progress |
-| Connect to Secure AI API | Flutter App & Packages | 15/10/2025  | ⏳ Planned     |
-| Integrate Flutter IAM    | Flutter App & Packages | 20/10/2025  | ⏳ Planned     |
-| Web Demo Deployment      | Flutter App & Packages | 25/10/2025  | ⏳ Planned     |
+| Milestone                    | Category              | Target Date | Status     |
+| ---------------------------- | --------------------- | ----------- | ---------- |
+| Scaffold repo | Flutter App & Packages | 06/10/2025 | ✅ Done |
+| Streaming RAG UI | Flutter App & Packages | 12/10/2025 | ⏳ In Progress |
+| Connect to Secure AI API | Flutter App & Packages | 16/10/2025 | ⏳ In Progress |
+| Integrate Flutter IAM | Flutter App & Packages | 20/10/2025 | ⏳ In Progress |
+| Web Demo Deployment | Flutter App & Packages | 25/10/2025 | ⏳ In Progress |
 
----
-
-## 📦 CI/CD
-
-- **GitHub Actions** → analyze, test, and build web + APK
-- **Shorebird** → hotfix releases per flavor (Dev/Prod)
 
 ---
 
