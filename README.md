@@ -9,7 +9,7 @@ Flutter RAG chat with streaming UI (Riverpod + GetIt), connects to Secure AI API
 - **Status:** scaffolded (Scaffolded)
 - **Focus:** Flutter RAG chat with streaming UI (Riverpod + GetIt), connects to Secure AI API.
 - **Last updated:** 13/10/2025
-- **Target completion:** 25/10/2025
+- **Target completion:** 26/10/2025
 
 ---
 
@@ -104,8 +104,8 @@ flutter test --coverage
 | Milestone                    | Category              | Target Date | Status     |
 | ---------------------------- | --------------------- | ----------- | ---------- |
 | Scaffold repo | Flutter App & Packages | 06/10/2025 | ✅ Done |
-| Streaming RAG UI | Flutter App & Packages | 12/10/2025 | ⏳ In Progress |
-| Connect to Secure AI API | Flutter App & Packages | 16/10/2025 | ⏳ In Progress |
+| Streaming RAG UI | Flutter App & Packages | 26/10/2025 | ⏳ In Progress |
+| Connect to Secure AI API | Flutter App & Packages | 26/10/2025 | ⏳ In Progress |
 | Integrate Flutter IAM | Flutter App & Packages | 20/10/2025 | ⏳ In Progress |
 | Web Demo Deployment | Flutter App & Packages | 25/10/2025 | ⏳ In Progress |
 
